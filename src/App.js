@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
 import Homepage from "./Components/Homepage";
+import ProtectedRoute from "./Components/ProtectedRoute";
 
 function App() {
   return (
@@ -14,8 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
-        <Route exact path = '/dashboard' component = {Homepage} />
-
+        <ProtectedRoute exact path = "/homepage" component = {Homepage}/>
       </Switch>
     </BrowserRouter>
   );

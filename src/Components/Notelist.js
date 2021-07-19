@@ -6,7 +6,7 @@ import Notes from './Notes'
 
 function Notelist(props) {
     useEffect(() => {
-        props.getAllContacts();
+        props.getAllNoteActions();
     }, []);
 
     console.log('notes', props.notes)

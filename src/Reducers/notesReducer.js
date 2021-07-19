@@ -19,12 +19,6 @@ export default notesReducer;
 
 
 
-
-
-
-
-
-
 //From the noteActions
 /*case "SET_ALL_NOTES":
 let contactsfromdb = action.payload//payload contains the data that is in the db
